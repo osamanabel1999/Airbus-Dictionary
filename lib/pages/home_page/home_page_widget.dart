@@ -60,8 +60,14 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         'https://github.com/osamanabel1999/App-assets/blob/main/pexels-berke-bayar-249159920-17643130.jpeg?raw=true',
                     image2Url:
                         'https://github.com/osamanabel1999/App-assets/blob/main/pexels-peter-xie-371876898-37616785.jpeg?raw=true',
-                    onTermsClick: () async {},
-                    onPrivacyClick: () async {},
+                    onTermsClick: () async {
+                      await launchURL(
+                          'https://doc-hosting.flycricket.io/airbus-dictionary-terms-of-use/cefa4281-40fd-4c4a-a17c-8858c857adc7/terms');
+                    },
+                    onPrivacyClick: () async {
+                      await launchURL(
+                          'https://doc-hosting.flycricket.io/airbus-dictionary-privacy-policy/729f99c6-3572-4775-b6bf-8786c3a38073/privacy');
+                    },
                   ),
                 ),
               ),
